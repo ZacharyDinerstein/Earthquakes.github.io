@@ -1,0 +1,41 @@
+/* ============================ Target All Browsers ==================== */
+
+
+body {
+	background-color: dimgray;
+}
+
+#time {
+	top: 24px;
+	right: 20px;
+	position: absolute;
+	font-family: 'Economica', sans-serif;
+	font-size: 2em;
+}
+
+#title {
+	text-align: center;
+	font-weight: 2;
+	font-family: 'Monoton', cursive;
+}
+
+#map_quakes {
+	position: relative;
+	height: 100%;
+	width: 1424px;
+	top: 267px;
+}
+
+svg.datamap {
+	overflow: visible;
+	height: 100%;
+}
+
+
+/* ======================= Target Only Firefox Browsers ================ */
+
+@-moz-document url-prefix() { 
+    #map_quakes {
+        top: 270px;
+    }
+}
